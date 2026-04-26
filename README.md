@@ -1,0 +1,107 @@
+# StayEase
+
+StayEase is a Chennai-focused short-stay hospitality website concept for a planned Airbnb and Booking.com business. The business model is to lease or rent apartments or independent properties, improve the interior aesthetic, list the homes on travel platforms, and manage the guest experience.
+
+## Current Website
+
+The project is a React + Vite single-page website with a light, premium hospitality theme.
+
+Key sections:
+
+- Hero section for the StayEase brand and Chennai short-stay positioning
+- Operating metrics for launch speed, listing channels, and guest response
+- Service cards for property scouting, aesthetic setup, listing launch, and guest operations
+- Image-led stay concepts using generated apartment imagery
+- Launch workflow from property shortlist to first guest
+- Contact call-to-action with email form, phone links, and WhatsApp links
+
+## Tech Stack
+
+- React
+- Vite
+- Lucide React icons
+- Custom CSS
+- Generated bitmap images stored in `public/images`
+
+## Run Locally
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the local development server:
+
+```bash
+npm run dev -- --host 127.0.0.1
+```
+
+Open:
+
+```text
+http://127.0.0.1:5173/
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## Project Files
+
+- `index.html` - Vite app entry HTML
+- `src/main.jsx` - React page content and component structure
+- `src/styles.css` - Full responsive styling and visual theme
+- `public/images/stayease-hero.png` - Website hero image
+- `public/images/stayease-bedroom.png` - Bedroom concept image
+- `public/images/stayease-balcony.png` - Balcony breakfast concept image
+- `public/images/stayease-logo.png` - StayEase Chennai logo used in the navigation
+- `package.json` - Scripts and dependencies
+
+## Generated Image Direction
+
+The current images were generated for a bright Chennai serviced-apartment feel:
+
+- Sunlit apartment hero with warm woods, plants, balcony light, and premium homestay styling
+- Calm bedroom with white linen, workspace, luggage space, and soft local textures
+- Balcony breakfast scene with filter coffee, idli, plants, and a Chennai city backdrop
+
+Constraints used for the image set:
+
+- No readable text
+- No logos
+- No watermarks
+- No people
+- Bright, light, premium, Chennai hospitality mood
+
+## Change Log
+
+### 2026-04-26
+
+- Added `public/images/stayease-logo.png` to the website navigation as the StayEase logo.
+- Added a contact form that opens a prefilled email draft to `stayeasechennai@gmail.com`.
+- Added contact numbers `+91 92072 94868` for Githin and `+91 99950 84157` for Ashna.
+- Refined contact cards so each person's name appears once, with call and WhatsApp actions grouped beneath it.
+- Added WhatsApp redirect buttons for both contact numbers.
+- Polished the mobile contact layout and compact navigation icon.
+- Created `README.md` as the living project documentation and change log.
+- Fixed blank-screen issue by mounting the React app with `createRoot(...).render(...)` in `src/main.jsx`.
+
+### 2026-04-25
+
+- Created the initial StayEase React + Vite website.
+- Generated and added three website images under `public/images`.
+- Added responsive landing page sections for brand, services, stay concepts, launch process, and contact.
+- Verified `npm run build` passes.
+- Started the local dev server at `http://127.0.0.1:5173/`.
+
+## Maintenance Note
+
+Whenever the project changes, update the `Change Log` section in this file with:
+
+- Date
+- Files or areas changed
+- Short reason for the change
+- Any verification done, such as `npm run build`

@@ -281,6 +281,8 @@ A roadmap from "marketing site" to "operating platform":
 
 ### 2026-06-26
 
+- Added a **multi-page Vite build** (`vite.config.js`) so `/chennai` is served as a real static page (`chennai/index.html`) — works on GitHub Pages with no SPA fallback hack. The page reuses the homepage via a shared `src/App.jsx`.
+- Extracted the `App` component into `src/App.jsx`; `src/main.jsx` (homepage) and `src/chennai.jsx` (`/chennai`) both mount it. Restored the `import React` that the classic JSX runtime needs (this project has no `@vitejs/plugin-react`), verified `/chennai/` renders in the browser, and confirmed `npm run build` emits both `dist/index.html` and `dist/chennai/index.html`.
 - **Rewrote `README.md`** into a hackathon-ready document: problem/solution, features, tech stack, architecture & flow diagrams (Mermaid), CI/CD pipeline, file structure, and future scope.
 - Restricted the deploy workflow to the `main` branch only so production deploys from the default branch.
 - Enabled GitHub Pages, set custom domain `www.stayease.co.in`, and deployed the site; made the repository public so Pages is available on the free plan.

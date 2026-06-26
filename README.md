@@ -104,6 +104,11 @@ Constraints used for the image set:
 
 ## Change Log
 
+### 2026-06-26
+
+- Added `public/CNAME` (`www.stayease.co.in`) so the GitHub Pages custom domain persists across deploys; Vite copies it into `dist/` on build.
+- Verified `npm run build` passes and `dist/CNAME` is present.
+
 ### 2026-04-26
 
 - Added a GitHub Actions workflow to build the Vite app and deploy `dist` to GitHub Pages.

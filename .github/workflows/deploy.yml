@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - feature_stayease_v1.0_githin
   workflow_dispatch:
 
 permissions:

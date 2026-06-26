@@ -108,6 +108,8 @@ Constraints used for the image set:
 
 - Added `public/CNAME` (`www.stayease.co.in`) so the GitHub Pages custom domain persists across deploys; Vite copies it into `dist/` on build.
 - Verified `npm run build` passes and `dist/CNAME` is present.
+- Enabled GitHub Pages, set custom domain `www.stayease.co.in`, and deployed the site; made the repository public so Pages is available on the free plan.
+- Restricted the deploy workflow to the `main` branch only so production deploys from the default branch.
 
 ### 2026-04-26
 
